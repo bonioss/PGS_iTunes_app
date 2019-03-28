@@ -1,0 +1,43 @@
+{
+  "name": "PGS",
+  "version": "1.0.0",
+  "description": "PGS interview",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.prod.js  --colors",
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dodac url do gita z projektem"
+  },
+  "author": "Patryk Bochnak",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.4",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.15.3",
+    "eslint-loader": "^2.1.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.2",
+    "imagemin-webpack-plugin": "^2.4.0",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
