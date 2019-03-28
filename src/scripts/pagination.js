@@ -6,8 +6,7 @@ import $ from "jquery";
 
   var paginate = {
     startPos: function (pageNumber, perPage) {
-      // determine what array position to start from
-      // based on current page and # per page
+     
       return pageNumber * perPage;
     },
 
@@ -55,7 +54,7 @@ import $ from "jquery";
     },
 
     createPage: function (items, currentPage, perPage) {
-      // remove pagination from the page
+    
       $(".pagination").remove();
 
       // set context for the items
@@ -68,7 +67,7 @@ import $ from "jquery";
 
       // loop items and read to page
       $.each(page, function () {
-        // prevent empty items that return as Window
+        
         if (this.window === undefined) {
           container.append($(this));
         }
@@ -97,7 +96,6 @@ import $ from "jquery";
     }
   };
 
-  // stuff it all into a jQuery method!
   $.fn.paginate = function (perPage) {
     var items = $(this);
 
@@ -106,7 +104,7 @@ import $ from "jquery";
       perPage = 9;
     }
 
-    // don't fire if fewer items than perPage
+    
     if (items.length <= perPage) {
       return true;
     }
