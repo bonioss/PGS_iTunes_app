@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-(function nazwa($) {
+(function pagination($) {
 
   var currentPage = 1;
 
